@@ -10,32 +10,40 @@
 
 <body>
 
-  <div class="body">
+  <div class="form-style">
+    <form>
+      <fieldset>
 
-    <div class="red">
-      <td>(R) Red:</td>
-      <input type="range" id="rangeRed" min="0" max="255" step="1" value="0">
-      <input type="text" id="colorR" readonly>
-    </div>
+        <legend class="title">
+          Desafio RGB
+        </legend>
 
-    <div class="green">
-      <td>(G) Green:</td>
-      <input type="range" id="rangeGreen" min="0" max="255" step="1" value="0">
-      <input type="text" id="colorG" readonly>
-    </div>
+        <legend>
+          <span class="number">1</span> Range RGB
+        </legend>
 
-    <div class="blue">
-      <td>(B) Blue:</td>
-      <input type="range" id="rangeBlue" min="0" max="255" step="1" value="0">
-      <input type="text" id="colorB" readonly>
-    </div>
+        <label>(R) Red:</label>
+        <input type="range" id="rangeRed" min="0" max="255" step="1" value="0">
+        <input type="text" id="colorR" disabled>
 
-    <div Class="swapColor">
+        <label>(G) Green:</label>
+        <input type="range" id="rangeGreen" min="0" max="255" step="1" value="0">
+        <input type="text" id="colorG" disabled>
 
-    </div>
-  </div>
+        <label>(B) Blue:</label>
+        <input type="range" id="rangeBlue" min="0" max="255" step="1" value="0">
+        <input type="text" id="colorB" disabled>
 
-  <script src="./js/script.js"></script>
+        <legend>
+          <span class="number">2</span> GRID RGB
+        </legend>
+        <div class="swapColor">
+
+        </div>
+      </fieldset>
+    </form>
+
+    <script src="./js/script.js"></script>
 
 </body>
 
